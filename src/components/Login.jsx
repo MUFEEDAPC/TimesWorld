@@ -110,7 +110,13 @@ const Login = () => {
   }
 
   return (
-    <Container style={{paddingLeft:isMobile?"0px":"30px", paddingRight:isMobile?"0px":"30px"}} className="min-vh-100 d-flex align-items-center justify-content-center">
+    <Container
+      style={{
+        paddingLeft: isMobile ? "0px" : "30px",
+        paddingRight: isMobile ? "0px" : "30px",
+      }}
+      className="min-vh-100 d-flex align-items-center justify-content-center"
+    >
       <div className="login-page">
         <div className="login-container">
           {/* Header */}
@@ -199,7 +205,7 @@ const Login = () => {
             </Col>
             <Col xs="auto">
               <div className="icon-circle">
-                <FaTwitter />
+                <FaFacebookF />
               </div>
             </Col>
             <Col xs="auto">
@@ -209,26 +215,26 @@ const Login = () => {
             </Col>
             <Col xs="auto">
               <div className="icon-circle">
-                <FaYoutube />
+                <FaTwitter />
               </div>
             </Col>
           </Row>
         </div>
         {!isMobile && (
-          // <Col md={3} 
-          
+          // <Col md={3}
+
           // className="image-gap"
           // >
-            <Image
-              src="src/assets/assets/images/image.png"
-              alt="Frame"
-              rounded
-              style={{
-                height: "620px",
-                // width: "69px",
-                objectFit: "contain",
-              }}
-            />
+          <Image
+            src="src/assets/assets/images/image.png"
+            alt="Frame"
+            rounded
+            style={{
+              height: "620px",
+              // width: "69px",
+              objectFit: "contain",
+            }}
+          />
           // </Col>
         )}
       </div>
