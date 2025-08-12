@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Button, Spinner, Alert, Card, Row, Col } from "react-bootstrap";
 import CustomeSlider from "./CustomeSlider";
 // import Footer from "./Footer";
+import { useMediaQuery } from 'react-responsive';
 
 const CountriesSlider = () => {
   const [countries, setCountries] = useState([]);
@@ -9,6 +10,7 @@ const CountriesSlider = () => {
   const [error, setError] = useState(null);
   const [displayedCountries, setDisplayedCountries] = useState([]);
   const [hasMore, setHasMore] = useState(true);
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   const itemsPerPage = 6;
   const loadMoreRef = useRef(null);
@@ -74,7 +76,7 @@ const CountriesSlider = () => {
   };
 
   const renderCountryCard = (country) => (
-    <Col key={country.name} xs={12} sm={6} md={6} className="mb-4">
+    <Col key={country.name} xs={12} sm={6} md={6} className={` ${isMobile ? 'mb-2' : 'mb-4'}`}>
       <Card className="country-card p-3">
         <div className="d-flex align-items-center gap-3">
           <div className="country-thumb">

@@ -7,8 +7,9 @@ import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
-  FaYoutube,
 } from "react-icons/fa";
+import { SiGoogle } from "react-icons/si";
+
 import { useMediaQuery } from "react-responsive";
 
 const Login = () => {
@@ -185,7 +186,7 @@ const Login = () => {
           {/* Separator */}
           <div className="text-center mb-4">
             <div className="separator">
-              <span className="separator-text text-muted">or sign in with</span>
+              <span className="separator-text text-muted">Or Sign In With</span>
             </div>
           </div>
 
@@ -193,7 +194,7 @@ const Login = () => {
           <Row className="justify-content-center mb-3">
             <Col xs="auto">
               <div className="icon-circle">
-                <FaFacebookF />
+                <SiGoogle />
               </div>
             </Col>
             <Col xs="auto">

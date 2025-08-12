@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light;
@@ -25,6 +25,7 @@ body, html {
   padding: 0;
   scroll-behavior: smooth;
   background-color: white;
+  font-family: 'Noto Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
 }
 
 #root {
@@ -32,6 +33,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Noto Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
 }
 
 /* Login Page Styles */
@@ -61,7 +63,7 @@ body, html {
 }
 
 .login-title {
-  font-size: 2.5rem;
+  font-size: 32px;
   font-weight: 700;
   color: #3D3D3D;
 }
@@ -110,13 +112,41 @@ body, html {
     border-color: #3E3E3E;
     }
     
-    .form-check-input-box input[type="checkbox"] {
+    /* .form-check-input-box input[type="checkbox"] {
       width: 32px !important;
       height: 32px !important;
-      border: 2px solid #000000 !important;
+      border: 3px solid #000000 !important;
+      background-color: #F2F2F2 !important;
       padding-right: 10px !important;
       border-radius: 0px !important;
-    }
+        accent-color: black !important;
+    } */
+     .form-check-input-box input[type="checkbox"] {
+  /* hide default */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #000;
+  background-color: #F2F2F2;
+  border-radius: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-check-input-box input[type="checkbox"]:checked::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 10px;
+  height: 18px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
     .form-check-input-box label {
   
       padding-left: 10px !important;
@@ -178,7 +208,7 @@ body, html {
   position: relative;
   z-index: 2;
   font-size: 14px;
-    color: #CFCFCF;
+    color: #3D3D3D;
   background: white;
   padding: 0 1rem;
   font-weight: 700;
@@ -277,7 +307,7 @@ flex-direction: column;}
     }
 
   .login-title {
-    font-size: 2rem;
+    font-size: 32px;
   }
   
   .countries-slider {
@@ -290,7 +320,7 @@ flex-direction: column;}
   }
   
   .form-control-lg {
-    font-size: 1rem;
+    font-size:16px;
   }
 }
 
@@ -335,7 +365,7 @@ flex-direction: column;}
  @media (min-width: 992px) {
 
   .login-title {
-    font-size: 3rem;
+    font-size: 32px;
   }
 }
 
@@ -427,6 +457,7 @@ flex-direction: column;}
   font-size: 16px !important;
   line-height: 16px;
   border-radius: 0px !important;
+  box-shadow: none;
 }
 /* Arrows */
 .custom-prev,
@@ -468,7 +499,12 @@ flex-direction: column;}
 }.nav-underline .nav-link.active {
   border-bottom-color: #333 !important; /* underline color */
 }
+.nav-item-custom{
+  padding-left: 0px !important;
+  min-width: 42px;
+    text-align: left;
 
+}
 .footer-section{
   padding-top: 5rem;
   padding-bottom: 10rem;

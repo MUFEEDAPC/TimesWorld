@@ -5,11 +5,13 @@ import { useNavigate } from "react-router-dom";
 import CountriesSlider from "./CountriesSlider.jsx";
 import { BoxArrowRight } from "react-bootstrap-icons";
 import Footer from "./Footer.jsx";
+import { useMediaQuery } from 'react-responsive';
 
 const Home = () => {
   // const dispatch = useDispatch()
   const { isAuthenticated } = useSelector((state) => state.auth);
   const navigate = useNavigate();
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   // Redirect to login if not authenticated
   useEffect(() => {
@@ -57,8 +59,8 @@ const Home = () => {
                   id="country-nav"
                   className="justify-content-end"
                 >
-                  <Nav variant="underline" defaultActiveKey="all">
-                    <Nav.Item>
+                  <Nav variant={!isMobile&&"underline"} defaultActiveKey="all">
+                    <Nav.Item className='nav-item-custom'>
                       <Nav.Link eventKey="all">All</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
@@ -74,12 +76,12 @@ const Home = () => {
           </Row>
 
           {/* Middle - WELCOME heading */}
-          <Row className="align-items-center mt-4 flex-column flex-md-row">
+          <Row className="align-items-center flex-column flex-md-row" style={{marginTop:isMobile?"35px":"20px" }}>
           <Col>
               <div
                 style={{
                   flexGrow: 1,
-                  height: "2px",
+                  height: "2.3px",
                   backgroundColor: "#3D3D3D",
                   margin: 0,
                   display: "block",
@@ -99,7 +101,7 @@ const Home = () => {
               <div
                 style={{
                   flexGrow: 1,
-                  height: "2px",
+                  height: isMobile?2:"2.3px",
                   backgroundColor: "#3D3D3D",
                   margin: 0,
                   display: "block",
