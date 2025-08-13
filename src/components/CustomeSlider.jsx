@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Carousel, Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useMediaQuery } from "react-responsive";
-import dummyImage from "./assets/images/dummyImage.png";
+import dummyImage from "src/assets/assets/images/image.png"; // Adjust the path as necessary
 
 export default function CustomSlider() {
   const [index, setIndex] = useState(0);
