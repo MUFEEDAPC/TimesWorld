@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Carousel, Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useMediaQuery } from "react-responsive";
-import dummyImage from "src/assets/assets/images/image.png"; // Adjust the path as necessary
 
 export default function CustomSlider() {
   const [index, setIndex] = useState(0);
@@ -40,7 +39,7 @@ export default function CustomSlider() {
               }}
             >
               <Image
-                src={dummyImage}
+                src="https://res.cloudinary.com/dpztiygfk/image/upload/v1755072075/dummyImage_vuba6r.png"
                 alt="Frame"
                 rounded
                 style={{
@@ -73,7 +72,7 @@ export default function CustomSlider() {
                       }}
                     >
                       <Image
-                        src={dummyImage}
+                        src="https://res.cloudinary.com/dpztiygfk/image/upload/v1755072075/dummyImage_vuba6r.png"
                         alt="Slide"
                         rounded
                         style={{
@@ -199,7 +198,7 @@ export default function CustomSlider() {
                       }}
                     >
                       <Image
-                        src={dummyImage}
+                        src="https://res.cloudinary.com/dpztiygfk/image/upload/v1755072075/dummyImage_vuba6r.png"
                         alt="Slide"
                         rounded
                         style={{
@@ -315,7 +314,7 @@ export default function CustomSlider() {
               }}
             >
               <Image
-                src={dummyImage}
+                src="https://res.cloudinary.com/dpztiygfk/image/upload/v1755072075/dummyImage_vuba6r.png"
                 alt="Frame"
                 rounded
                 style={{

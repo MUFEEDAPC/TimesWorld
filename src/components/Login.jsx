@@ -226,7 +226,7 @@ const Login = () => {
           // className="image-gap"
           // >
           <Image
-            src="public/assets/assets/images/image.png"
+            src="https://res.cloudinary.com/dpztiygfk/image/upload/v1755071847/Image_ixtgul.png"
             alt="Frame"
             rounded
             style={{
