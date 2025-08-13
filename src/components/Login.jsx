@@ -122,7 +122,7 @@ const Login = () => {
         <div className="login-container">
           {/* Header */}
           <div className="my-text">
-            <h1 className="login-title mb-2">Sign In</h1>
+            <h1 className="login-title mb-3">Sign In</h1>
             <p className="text-muted mb-0 new-user-text">
               New user?{" "}
               <a
