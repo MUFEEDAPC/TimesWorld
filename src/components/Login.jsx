@@ -3,11 +3,12 @@ import { Form, Button, Col, Image, Row, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { loginSuccess } from "../features/auth/authSlice.js";
 import { useNavigate } from "react-router-dom";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FiFacebook } from "react-icons/fi";
+import { TbBrandGoogle } from "react-icons/tb";
+import { FiLinkedin } from "react-icons/fi";
+import { PiTwitterLogoBold } from "react-icons/pi";
+
+
 import { SiGoogle } from "react-icons/si";
 
 import { useMediaQuery } from "react-responsive";
@@ -200,22 +201,22 @@ const Login = () => {
           <Row className="justify-content-center mb-3">
             <Col xs="auto">
               <div className="icon-circle">
-                <SiGoogle />
+                <TbBrandGoogle />
               </div>
             </Col>
             <Col xs="auto">
               <div className="icon-circle">
-                <FaFacebookF />
+                <FiFacebook />
               </div>
             </Col>
             <Col xs="auto">
               <div className="icon-circle">
-                <FaLinkedinIn />
+                <FiLinkedin />
               </div>
             </Col>
             <Col xs="auto">
               <div className="icon-circle">
-                <FaTwitter />
+                <PiTwitterLogoBold />
               </div>
             </Col>
           </Row>

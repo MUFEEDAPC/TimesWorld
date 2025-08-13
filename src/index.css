@@ -420,6 +420,9 @@ flex-direction: column;}
     width: 48px;
     height: 46px;
   }
+  .nav-item-custom{
+    text-align: end !important;
+  }
 }
 .country-thumb img {
   width: 100%;

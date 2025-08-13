@@ -61,13 +61,13 @@ const Home = () => {
                 >
                   <Nav variant={!isMobile&&"underline"} defaultActiveKey="all">
                     <Nav.Item className='nav-item-custom'>
-                      <Nav.Link eventKey="all">All</Nav.Link>
+                      <Nav.Link className='nav-item-custom' eventKey="all">All</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="asia">Asia</Nav.Link>
+                    <Nav.Item className='nav-item-custom'>
+                      <Nav.Link className='nav-item-custom' eventKey="asia">Asia</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="europe">Europe</Nav.Link>
+                    <Nav.Item className='nav-item-custom'>
+                      <Nav.Link className='nav-item-custom'  eventKey="europe">Europe</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Navbar.Collapse>

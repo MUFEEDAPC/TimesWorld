@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { TbBrandYoutube } from "react-icons/tb";
+import { FiFacebook } from "react-icons/fi";
+import { PiTwitterLogoBold } from "react-icons/pi";
+import { FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -10,22 +13,22 @@ const Footer = () => {
         <Row className="justify-content-center mb-3">
           <Col xs="auto">
             <div className="icon-circle">
-              <FaFacebookF />
+              <FiFacebook />
             </div>
           </Col>
           <Col xs="auto">
             <div className="icon-circle">
-              <FaTwitter />
+              <PiTwitterLogoBold />
             </div>
           </Col>
           <Col xs="auto">
             <div className="icon-circle">
-              <FaLinkedinIn />
+              <FiLinkedin />
             </div>
           </Col>
           <Col xs="auto">
             <div className="icon-circle">
-              <FaYoutube />
+              <TbBrandYoutube />
             </div>
           </Col>
         </Row>
