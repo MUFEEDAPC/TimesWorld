@@ -39,7 +39,7 @@ export default function CustomSlider() {
               }}
             >
               <Image
-                src="src/assets/assets/images/dummyImage.png"
+                src="public/assets/assets/images/dummyImage.png"
                 alt="Frame"
                 rounded
                 style={{
@@ -72,7 +72,7 @@ export default function CustomSlider() {
                       }}
                     >
                       <Image
-                        src="src/assets/assets/images/dummyImage.png"
+                        src="public/assets/assets/images/dummyImage.png"
                         alt="Slide"
                         rounded
                         style={{
@@ -198,7 +198,7 @@ export default function CustomSlider() {
                       }}
                     >
                       <Image
-                        src="src/assets/assets/images/dummyImage.png"
+                        src="public/assets/assets/images/dummyImage.png"
                         alt="Slide"
                         rounded
                         style={{
@@ -314,7 +314,7 @@ export default function CustomSlider() {
               }}
             >
               <Image
-                src="src/assets/assets/images/dummyImage.png"
+                src="public/assets/assets/images/dummyImage.png"
                 alt="Frame"
                 rounded
                 style={{

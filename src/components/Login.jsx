@@ -226,7 +226,7 @@ const Login = () => {
           // className="image-gap"
           // >
           <Image
-            src="src/assets/assets/images/image.png"
+            src="public/assets/assets/images/image.png"
             alt="Frame"
             rounded
             style={{
