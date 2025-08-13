@@ -60,7 +60,7 @@ export default function CustomSlider() {
                 controls={false}
                 className="border"
               >
-                {[1, 2, 3].map((item) => (
+                {[1, 2, 3, 4].map((item) => (
                   <Carousel.Item key={item}>
                     <div
                       style={{
@@ -127,7 +127,7 @@ export default function CustomSlider() {
                 </button>
 
                 <div style={{ display: "flex", gap: "6px" }}>
-                  {[0, 1, 2].map((dotIndex) => (
+                  {[0, 1, 2,4].map((dotIndex) => (
                     <span
                       key={dotIndex}
                       onClick={() => setIndex(dotIndex)}
@@ -175,7 +175,7 @@ export default function CustomSlider() {
           </Col>
         </Row>
       ) : (
-        <Row className="justify-content-center py-4">
+        <Row className="justify-content-center pt-3 pb-4">
           {/* Large Slider */}
           <Col md={9}>
             <div style={{ position: "relative" }}>
@@ -186,7 +186,7 @@ export default function CustomSlider() {
                 controls={false}
                 className="border"
               >
-                {[1, 2, 3].map((item) => (
+                {[1, 2, 3, 4].map((item) => (
                   <Carousel.Item key={item}>
                     <div
                       style={{
@@ -253,13 +253,13 @@ export default function CustomSlider() {
                 </button>
 
                 <div style={{ display: "flex", gap: "6px" }}>
-                  {[0, 1, 2].map((dotIndex) => (
+                  {[0, 1, 2,3].map((dotIndex) => (
                     <span
                       key={dotIndex}
                       onClick={() => setIndex(dotIndex)}
                       style={{
-                        width: 8,
-                        height: 8,
+                        width: 13,
+                        height: 13,
                         borderRadius: "50%",
                         backgroundColor: dotIndex === index ? "#000" : "#fff",
                         cursor: "pointer",
@@ -305,7 +305,7 @@ export default function CustomSlider() {
             <div
               className="border"
               style={{
-                height: isTab ? "240px" : "498px",
+                height: isTab ? "244px" : "500px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",

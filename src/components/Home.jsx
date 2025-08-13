@@ -33,8 +33,11 @@ const Home = () => {
   return (
     <div className="min-vh-100 ">
       <Container className="py-4">
-      <div className="custom-padding">
-      <Row className="align-items-center">
+        <div className="custom-padding">
+          <Row
+            className="align-items-center"
+            style={{ marginBottom: !isMobile && "35px" }}
+          >
             {/* Left - Title */}
             <Col xs="auto">
               <strong style={{ fontSize: "24px", color: "#3D3D3D" }}>
@@ -59,15 +62,24 @@ const Home = () => {
                   id="country-nav"
                   className="justify-content-end"
                 >
-                  <Nav variant={!isMobile&&"underline"} defaultActiveKey="all">
-                    <Nav.Item className='nav-item-custom'>
-                      <Nav.Link className='nav-item-custom' eventKey="all">All</Nav.Link>
+                  <Nav
+                    variant={!isMobile && "underline"}
+                    defaultActiveKey="all"
+                  >
+                    <Nav.Item className="nav-item-custom">
+                      <Nav.Link className="nav-item-custom" eventKey="all">
+                        All
+                      </Nav.Link>
                     </Nav.Item>
-                    <Nav.Item className='nav-item-custom'>
-                      <Nav.Link className='nav-item-custom' eventKey="asia">Asia</Nav.Link>
+                    <Nav.Item className="nav-item-custom">
+                      <Nav.Link className="nav-item-custom" eventKey="asia">
+                        Asia
+                      </Nav.Link>
                     </Nav.Item>
-                    <Nav.Item className='nav-item-custom'>
-                      <Nav.Link className='nav-item-custom'  eventKey="europe">Europe</Nav.Link>
+                    <Nav.Item className="nav-item-custom">
+                      <Nav.Link className="nav-item-custom" eventKey="europe">
+                        Europe
+                      </Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Navbar.Collapse>
@@ -76,8 +88,11 @@ const Home = () => {
           </Row>
 
           {/* Middle - WELCOME heading */}
-          <Row className="align-items-center flex-column flex-md-row" style={{marginTop:isMobile?"35px":"20px" }}>
-          <Col>
+          <Row
+            className="align-items-center flex-column flex-md-row"
+            style={{ marginTop: isMobile ? "35px" : "20px" }}
+          >
+            <Col>
               <div
                 style={{
                   flexGrow: 1,
@@ -101,7 +116,7 @@ const Home = () => {
               <div
                 style={{
                   flexGrow: 1,
-                  height: isMobile?2:"2.3px",
+                  height: isMobile ? 2 : "2.3px",
                   backgroundColor: "#3D3D3D",
                   margin: 0,
                   display: "block",
