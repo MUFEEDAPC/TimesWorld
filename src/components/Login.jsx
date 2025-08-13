@@ -95,7 +95,7 @@ const Login = () => {
       dispatch(loginSuccess({ email: formData.email }));
 
       // Redirect to home page
-      navigate("/", { replace: true });
+      navigate("/home", { replace: true });
     } catch (error) {
       console.error("Login error:", error);
     } finally {
