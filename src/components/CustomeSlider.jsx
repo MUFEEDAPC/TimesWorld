@@ -12,7 +12,7 @@ export default function CustomSlider() {
     setIndex(selectedIndex);
   };
 
-  const totalSlides = 3;
+  const totalSlides = 4;
   const prevSlide = () => {
     setIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
